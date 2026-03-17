@@ -127,7 +127,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 9
+  serializedVersion: 10
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 1
   m_RealtimeEnvironmentLighting: 1
@@ -142,6 +142,12 @@ LightingSettings:
   m_BakeResolution: 40
   m_Padding: 2
   m_LightmapCompression: 3
+  m_LightmapPackingMode: 1
+  m_LightmapPackingMethod: 0
+  m_XAtlasPackingAttempts: 16384
+  m_XAtlasBruteForce: 0
+  m_XAtlasBlockAlign: 0
+  m_XAtlasRepackUnderutilizedLightmaps: 1
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 0
@@ -1078,6 +1084,34 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7038514
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.067773156
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7038514
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.067773156
+      objectReference: {fileID: 0}
+    - target: {fileID: 444616, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 476846, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1172,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2001612, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
       propertyPath: field of view
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2001612, guid: 9830946070aa04b649b2ca2eb13f425e, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -1438,14 +1472,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162088939}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 0
     m_Resolution: 3
@@ -1740,20 +1774,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
-      propertyPath: spawnXBarsAhead
+      propertyPath: firstPatternAt
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
+      propertyPath: spawnXBarsAhead
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
       propertyPath: melodyEveryXBars
-      value: 16
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
       propertyPath: rhythmEveryXBars
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
       propertyPath: harmonyEveryXBars
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 11493844, guid: 0b4ab94d14abf48208701fe74c72c14b, type: 3}
       propertyPath: patternColors.Array.data[0].g
@@ -1991,11 +2029,11 @@ PrefabInstance:
     - target: {fileID: 11478768, guid: c6e162e511dc34d3cb4e2f71a1c60b2a, type: 3}
       propertyPath: environmentSet
       value: 
-      objectReference: {fileID: 11400000, guid: a907b55e7d3d24cff93b3850b723d6f8,
+      objectReference: {fileID: 11400000, guid: f24d4c81c525c4a91ac1e2544da4ee9c,
         type: 2}
     - target: {fileID: 11478768, guid: c6e162e511dc34d3cb4e2f71a1c60b2a, type: 3}
       propertyPath: randomVariations
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2092,7 +2130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11447318, guid: 84b373dc5010b422bb8b45fba57f323d, type: 3}
       propertyPath: m_bpm
-      value: 128
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 11447318, guid: 84b373dc5010b422bb8b45fba57f323d, type: 3}
       propertyPath: m_masterAudioClip
@@ -2190,6 +2228,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &1750347718
 MeshCollider:
@@ -2498,6 +2537,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &2037703681
 MeshCollider:

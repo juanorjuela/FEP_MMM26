@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c716eca65d2f4271ad9c2db5bb83f8c, type: 3}
+  m_Name: EnvironmentData_MATAN
+  m_EditorClassIdentifier: 
+  environmentTiles:
+  - name: 1
+    prefab: {fileID: 194496, guid: 02f51db6666ebfa4a98c4d24134eabfe, type: 3}
+    connectsTo: 000000000300000008000000
+    length: 1
+  - name: 2
+    prefab: {fileID: 194496, guid: a5fefe5760cc7b2478001668b423e166, type: 3}
+    connectsTo: 0100000002000000
+    length: 1
+  - name: 3
+    prefab: {fileID: 100956, guid: 65825c8d4988ea9459286f6b1815f0c9, type: 3}
+    connectsTo: 00000000
+    length: 1
+  - name: 4
+    prefab: {fileID: 100956, guid: 6827368977b665345adfcfa5f1a66b26, type: 3}
+    connectsTo: 01000000
+    length: 1
+  - name: 5
+    prefab: {fileID: 100956, guid: 2e2babe3db56d274b8487623c5445ea0, type: 3}
+    connectsTo: 01000000
+    length: 1
+  - name: 6
+    prefab: {fileID: 100956, guid: 124a8bc5dd263824a98db0b9144d2c47, type: 3}
+    connectsTo: 01000000
+    length: 1
+  - name: 7
+    prefab: {fileID: 194496, guid: 9ba27df6f058d964b923be81d48c75c0, type: 3}
+    connectsTo: 01000000
+    length: 1
+  - name: 8
+    prefab: {fileID: 194496, guid: 5af46659146ba1d45a26e895364e0d0f, type: 3}
+    connectsTo: 01000000
+    length: 1
