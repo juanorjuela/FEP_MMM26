@@ -1007,6 +1007,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sunflower Field (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 405722, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 405722, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 422048, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43
+      objectReference: {fileID: 0}
+    - target: {fileID: 422048, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 474426, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.4319
+      objectReference: {fileID: 0}
+    - target: {fileID: 474426, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.4319
+      objectReference: {fileID: 0}
+    - target: {fileID: 474426, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.4319
+      objectReference: {fileID: 0}
     - target: {fileID: 474426, guid: 35d482572f676e1459a1d096f2cb6a13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
